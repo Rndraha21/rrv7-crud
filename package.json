@@ -3,8 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build && npm run postbuild",
-    "postbuild": "mkdir build\\server && copy build\\server\\nodejs_eyJydW50aW1lIjoibm9kZWpzIn0\\index.js build\\server\\index.js",
+    "build": "react-router build && node scripts/copy-ssr-entry.js",
     "dev": "react-router dev",
     "start": "react-router-serve ./build/server/index.js",
     "typecheck": "react-router typegen && tsc"
