@@ -11,6 +11,7 @@
     }
   ],
   "routes": [
-    { "handle": "filesystem" }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "/api/index.ts" }
   ]
 }
